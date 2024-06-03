@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.todo-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.todo-form {
+    margin-bottom: 20px;
+}
+
+#task-input, #task-datetime {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-task {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+}
+
+.task-item input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    cursor: default;
+}
+
+.task-item .task-datetime {
+    font-size: 0.8em;
+    color: #888;
+    margin-right: 10px;
+}
+
+.task-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-task {
+    background-color: #008CBA;
+    color: white;
+}
+
+.delete-task {
+    background-color: #f44336;
+    color: white;
+}
+
+.complete-task {
+    background-color: #4CAF50;
+    color: white;
+}
